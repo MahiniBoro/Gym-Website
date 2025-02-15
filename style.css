@@ -45,8 +45,8 @@
 /* Style for the right section containing buttons (Call and Email) */
 .right {
     position: absolute;
-    right: 10px;
-    top: 0px;
+    right: -40px;
+    top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -127,7 +127,7 @@
 /* This section holds the main content of the page */
 .container {
     border: 4px solid rgb(0, 0, 0);
-    margin: 20px 100px;
+    margin: 86px 100px;
     padding: 10px;
     width: 100%;
     max-width: 400px;
