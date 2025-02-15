@@ -45,8 +45,8 @@
 /* Style for the right section containing buttons (Call and Email) */
 .right {
     position: absolute;
-    right: 94px;
-    top: 8px;
+    right: 10px;
+    top: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
