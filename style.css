@@ -46,7 +46,7 @@
 .right {
     position: absolute;
     right: -40px;
-    top: 41px;
+    top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
