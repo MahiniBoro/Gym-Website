@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness</title>
+    <title>FlexiFit Gym</title>
     <!-- Link for Font Awesome icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link
@@ -20,7 +20,7 @@
             padding: 0px;
             background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
                 url('img/background.jpg') repeat;
-            background-size: auto;
+            background-size: cover;
             height: 100vh;
             opacity: 0.9;
             z-index: -1;
@@ -174,15 +174,16 @@
         }
 
         @media only screen and (max-width: 768px) {
-            header {
+            .left, .right {
+                position: relative;
+                width: 100%;
+                text-align: center;
+            }
+            .navbar {
                 flex-direction: column;
                 align-items: center;
             }
-
-            .mid {
-                width: 100%;
-            }
-
+            
             .navbar li {
                 font-size: 20px;
             }
@@ -203,16 +204,7 @@
         }
 
         @media only screen and (max-width: 480px) {
-            header {
-                padding: 10px;
-            }
-
-            .left,
-            .right {
-                position: relative;
-                width: 100%;
-                text-align: center;
-            }
+           
 
             .navbar li {
                 font-size: 18px;
@@ -230,6 +222,12 @@
             .footer {
                 padding: 15px;
             }
+            .footer-content {
+                padding: 15px;
+            }
+            .social-media {
+                margin-top: 10px;
+            }
         }
 
         .header {
@@ -237,7 +235,7 @@
         }
 
         header::before {
-            background: url('img/background.jpg') repeat;
+            background: url('/img/background.jpg') repeat;
             content: "";
             position: absolute;
             top: 0;
@@ -306,7 +304,7 @@
         <div class="overlay"></div>
         <!-- Left box for logo -->
         <div class="left">
-            <img src="img/gym .jpg" alt="">
+            <img src="/img/gym.jpg" alt="">
             <div>FlexiFit Gym</div>
         </div>
         <!-- mid box for navbar -->
